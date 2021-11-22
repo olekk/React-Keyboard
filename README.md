@@ -1,10 +1,10 @@
 # React Keyboard
+  
 Screen keyboard created in React using create-react-app tool.  
+  
 Keyboard allows to hold mouse pressed and write by moving it over keys.  
 Also, if you keep key pressed, after 500ms it will continuously write letter every 50ms until key is released.  
 Key arrangment and their special functions are set in the JSON file.  
-
-
 
 App is deployed on Heroku.
 

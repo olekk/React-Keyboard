@@ -5,7 +5,7 @@ import InputField from "./components/InputField";
 
 function App() {
 
-    // state variable ram recieves a data from keyboard, then is sent to InputFields and immediately deleted 
+    // state variable ram recieves a data from keyboard, then it is sent to InputFields and immediately cleared 
     const [ram, setRam] = useState(null);
     const [activeInput, setActiveInput] = useState(0)
 

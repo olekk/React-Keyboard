@@ -13,32 +13,19 @@ function Keyboard (props) {
     // constant with Keys data without division into rows
     const KeysList = [].concat(...Keys);
 
-    // logic handling mouse clicks and key hovers
-    const handleKeyHover = (keyId, entered) => {
-        if(entered)
-            setHoveredKeyId(keyId);
-        else
-            setHoveredKeyId(null)
-    }
 
-    const handleMouseDownUp = (event) => {
-        if(event.type === "mousedown") 
-            setMousedown(true);
-        else
-            setMousedown(false)
-    }
-
-    // logic combining mouse and key events which results in Keyboard output to App or toggles capslock
+    // logic combining mouse and key events which results in Keyboard output to App or toggling capslock
     let timeoutId = useRef([0,0]);
     const handleKeyEvent = () => {
+
+        clearTimeout(timeoutId.current[0]);
+
         // function to send repeating output until key is not released
         let loop = (fn) => {
             fn();
             if(mousedown && hoveredKeyId !== null) 
                 timeoutId.current[1]=setTimeout(()=>loop(fn), 50);
         }
-        
-        clearTimeout(timeoutId.current[0]);
         
         if(mousedown && hoveredKeyId !== null) {
             let activeKey = KeysList.filter(x=>x.id === hoveredKeyId)[0];
@@ -67,8 +54,8 @@ function Keyboard (props) {
     return (
         <div 
             className="keyboard" 
-            onMouseDown={handleMouseDownUp}
-            onMouseUp={handleMouseDownUp}
+            onMouseDown={()=>setMousedown(true)}
+            onMouseUp={()=>setMousedown(false)}
         >
             {Keys.map((row, index) => 
                 <div className="keyboard__row" key={index}>
@@ -80,7 +67,7 @@ function Keyboard (props) {
                                 id={key.id}
                                 value={capslock.current ? key.upper : key.lower}
                                 pressed={mousedown && hoveredKeyId === key.id}
-                                handleKeyHover={(entered)=>handleKeyHover(key.id, entered)}
+                                handleKeyHover={(entered)=>setHoveredKeyId(entered ? key.id : null )}
                             />
                         )
                     }

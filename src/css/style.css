@@ -43,26 +43,26 @@ body {
 .keyboard__key.pressed {
   background: #666;
 }
-.keyboard__key.key-36 {
+.keyboard__key.key-tab {
   flex: 1 0 3%;
 }
-.keyboard__key.key-48 {
+.keyboard__key.key-caps {
   flex: 1 0 6%;
 }
-.keyboard__key.key-59 {
+.keyboard__key.key-space {
   flex: 1 0 30%;
 }
-.keyboard__key.key-60 {
+.keyboard__key.key-backspace {
   flex: 1 0 5%;
 }
-.keyboard__key.key-57:nth-child(5) {
+.keyboard__key.key-enter:nth-child(5) {
   border-radius: 5px 0 5px 5px;
   flex: 0 0 11%;
 }
-.keyboard__key.key-57:nth-child(5).hovered {
+.keyboard__key.key-enter:nth-child(5).hovered {
   background: linear-gradient(0deg, #666 10%, #212121 90%);
 }
-.keyboard__key.key-57:nth-child(10) {
+.keyboard__key.key-enter:nth-child(11) {
   border-bottom: none;
   margin-top: 2px;
   margin-bottom: -6px;

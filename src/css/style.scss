@@ -45,19 +45,19 @@ body {
             background: #666;
         }
 
-        &.key-36 { // Tab
+        &.key-tab { // Tab
             flex: 1 0 3%;
         }
-        &.key-48 { // Caps
+        &.key-caps { // Caps
             flex: 1 0 6%;
         }
-        &.key-59 { // Space
+        &.key-space { // Space
             flex: 1 0 30%;
         }
-        &.key-60 { // Backspace
+        &.key-backspace { // Backspace
             flex: 1 0 5%;
         }
-        &.key-57 { // Enter
+        &.key-enter { // Enter
             &:nth-child(5) {
                 border-radius: 5px 0 5px 5px;
                 flex: 0 0 11%;
@@ -65,7 +65,7 @@ body {
                     background: linear-gradient(0deg, #666 10%, #212121 90%);
                 }
             }
-            &:nth-child(10) {
+            &:nth-child(11) {
                 border-bottom: none;
                 margin-top: 2px;
                 margin-bottom: -6px;

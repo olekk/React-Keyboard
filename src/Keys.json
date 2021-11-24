@@ -31,7 +31,7 @@
         {"id": 35, "lower": "]", "upper":"}", "fn":0}
     ],
     [
-        {"id": 36, "lower": "Tab ↹", "upper":"Tab ↹", "fn":"    "}, 
+        {"id": "tab", "lower": "Tab ↹", "upper":"Tab ↹", "fn":"    "}, 
         {"id": 37, "lower": "a", "upper":"A", "fn":0}, 
         {"id": 38, "lower": "s", "upper":"S", "fn":0}, 
         {"id": 39, "lower": "d", "upper":"D", "fn":0}, 
@@ -45,7 +45,7 @@
         {"id": 47, "lower": "'", "upper":"\"", "fn":0}
     ],
     [
-        {"id": 48, "lower": "Caps Off", "upper":"Caps On", "fn":"capslock"}, 
+        {"id": "caps", "lower": "Caps Off", "upper":"Caps On", "fn":"capslock"}, 
         {"id": 49, "lower": "z", "upper":"Z", "fn":0}, 
         {"id": 50, "lower": "x", "upper":"X", "fn":0}, 
         {"id": 51, "lower": "c", "upper":"C", "fn":0}, 
@@ -53,15 +53,16 @@
         {"id": 53, "lower": "b", "upper":"B", "fn":0}, 
         {"id": 54, "lower": "n", "upper":"N", "fn":0}, 
         {"id": 55, "lower": "m", "upper":"M", "fn":0}, 
-        {"id": 56, "lower": ".", "upper":",", "fn":0},
-        {"id": 57, "lower": "", "upper":"", "fn":"\n"}
+        {"id": 56, "lower": ".", "upper":"<", "fn":0},
+        {"id": 57, "lower": ",", "upper":">", "fn":0},
+        {"id": "enter", "lower": "", "upper":"", "fn":"\n"}
     ],
     [
         {"id": 58, "lower": "⊞", "upper":"⊞", "fn":"\nhttps://github.com/olekk/React-Keyboard\n"}, 
-        {"id": 70, "lower": "Cls", "upper":"Cls", "fn":"cls"}, 
-        {"id": 59, "lower": "Space ⎵", "upper":"Space ⎵", "fn":" "}, 
-        {"id": 60, "lower": "Backspace ←", "upper":"Backspace ←", "fn":"backspace"},
-        {"id": 57, "lower": "Enter ↵", "upper":"Enter ↵", "fn":"\n"}
+        {"id": 59, "lower": "Cls", "upper":"Cls", "fn":"cls"}, 
+        {"id": "space", "lower": "Space ⎵", "upper":"Space ⎵", "fn":" "}, 
+        {"id": "backspace", "lower": "Backspace ←", "upper":"Backspace ←", "fn":"backspace"},
+        {"id": "enter", "lower": "Enter ↵", "upper":"Enter ↵", "fn":"\n"}
     ]
 ]
 
